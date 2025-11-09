@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="mb-4 text-center">หมวด: {{ category_name }}</h1>
+
+<div class="row">
+  {% for a in articles %}
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="{{ url_for('static', filename=a.image) }}" class="card-img-top" alt="{{ a.title }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ a.title }}</h5>
+        <p class="card-text">{{ a.summary }}</p>
+        <a href="{{ url_for('article', id=a.id) }}" class="btn btn-outline-primary">อ่านต่อ</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<a href="/" class="btn btn-secondary mt-3">← กลับหน้าหลัก</a>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="/" class="btn btn-outline-secondary mb-3">← กลับหน้าหลัก</a>
+
+<div class="card shadow">
+  <img src="{{ url_for('static', filename=article.image) }}" class="card-img-top" alt="{{ article.title }}">
+  <div class="card-body">
+    <span class="badge bg-primary mb-2">{{ article.category }}</span>
+    <h2>{{ article.title }}</h2>
+    <div class="article-content mt-3">
+      {{ article.content|safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}
