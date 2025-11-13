@@ -180,11 +180,29 @@ articles = [
         "content": """
         <p>Git และ GitHub เป็นเครื่องมือสำคัญสำหรับนักพัฒนาซอฟต์แวร์...</p>
         
-        <img src="{{ url_for('static', filename='images/content6-1.jpg') }}" 
-             class="img-fluid rounded my-3" alt="Git Workflow">
-        <p class="text-muted text-center"><small>รูปที่ 1: Git Workflow</small></p>
-        
-        <p>การใช้ Git อย่างถูกวิธีช่วยให้การทำงานร่วมกับทีมเป็นไปอย่างราบรื่น...</p>
+       <div class="row my-4 ">
+        <div class="col-md-4 text-center">
+        <img src="/static/images/content6-1.jpg" 
+             class="img-fluid rounded shadow" >
+        </div>
+
+        <div class="col-md-4 text-center">
+        <img src="/static/images/content6-2.jpg" 
+             class="img-fluid rounded shadow" >
+        </div>
+        <div class="col-md-4 text-center">
+        <img src="/static/images/content6-3.jpg" 
+             class="img-fluid rounded shadow" >
+        </div>
+       
+                <a href="https://www.facebook.com/story.php?story_fbid=8861120357344071&id=100003385846218&rdid=r264hDk6p2XTs6UO" target="_blank" class="text-decoration-none">
+                    <div class="p-3 border rounded h-100">
+                        <div class="text-danger mb-2">▶</div>
+                        <h6>สูตรรัก รสเดช</h6>
+                    </div>
+                </a>
+                
+        </div>
         """
     }
 ]
