@@ -105,4 +105,31 @@ footer {
         transform: translateY(0);
     }
 }
+/* Navbar Profile Link Styles */
+.profile-nav-link {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white !important;
+    border-radius: 25px;
+    padding: 8px 16px !important;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.profile-nav-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    color: white !important;
+}
+
+/* หรือแบบง่ายๆ */
+.nav-profile {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff6b35 !important;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: 8px;
+    padding: 6px 12px !important;
+}
 
