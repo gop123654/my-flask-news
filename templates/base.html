@@ -16,15 +16,14 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-     <li class="nav-item">
-    <a class="nav-link fw-bold text-warning" href="{{ url_for('profile') }}">
-        <span style="font-size: 1.2em;">👤</span> 
-        <span class="ms-1">โปรไฟล์</span>
-    </a>
-</li>
-
+    
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+    <a class="nav-link profile-nav-link" href="{{ url_for('profile') }}">
+        👤 โปรไฟล์
+    </a>
+</li>
         {% for cat in categories %}
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('category', name=cat) }}">{{ cat }}</a>
@@ -46,6 +45,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
