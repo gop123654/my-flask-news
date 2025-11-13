@@ -221,5 +221,12 @@ def article(id):
     categories = get_categories()
     return render_template('article.html', article=item, categories=categories)
 
+
+@app.route('/profile')
+def profile():
+    categories = get_categories()
+    return render_template('profile.html', categories=categories)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
